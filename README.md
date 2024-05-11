@@ -16,6 +16,7 @@ We can use the virtiofs mount type to make setcap work:
 
 ```bash
 limactl start --mount-writable --vm-type=vz --mount-type=virtiofs template://fedora
+limactl shell fedora
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ./run.sh
 ```
